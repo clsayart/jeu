@@ -32,12 +32,12 @@ btnCardOne.addEventListener('click', function (event) {
     document.querySelector('#wrapper-glass').classList.remove("fixe")
     document.querySelector('#wrapper-glass').classList.add("ball")
     stopAnimation()
-    btnCardOne.blur()
+    focusOffCardOne()
 });
 
 btnCardTwo.addEventListener('click', function (event) {
     updateCards(slides)
-    btnCardTwo.blur()
+    focusOffCardTwo()
 });
 
 function endgame() {
@@ -57,8 +57,17 @@ function stopAnimation() {
         document.querySelector('#wrapper-glass').classList.add("fixe")
     }, 2000);
 }
-function focusOff() {
-    
+function focusOffCardOne() {
+    setTimeout(function () {
+        btnCardOne.blur()
+
+    },500);
+}
+function focusOffCardTwo() {
+    setTimeout(function () {
+        btnCardTwo.blur()
+
+    },500);
 }
 
 // function backToHomepage() {
