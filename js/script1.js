@@ -32,21 +32,23 @@ btnCardOne.addEventListener('click', function (event) {
     document.querySelector('#wrapper-glass').classList.remove("fixe")
     document.querySelector('#wrapper-glass').classList.add("ball")
     stopAnimation()
+    btnCardOne.blur()
 });
 
 btnCardTwo.addEventListener('click', function (event) {
     updateCards(slides)
+    btnCardTwo.blur()
 });
 
 function endgame() {
     if (cardOneClicked >= 4) {
         window.location.href = 'winning.html'
-        backToHomepage()
+        
     }
 
     else {
         window.location.href = 'rejected.html'
-        backToHomepage()
+       
     }
 }
 function stopAnimation() {
@@ -55,12 +57,15 @@ function stopAnimation() {
         document.querySelector('#wrapper-glass').classList.add("fixe")
     }, 2000);
 }
-
-function backToHomepage() {
-    setTimeout(function () {
-        window.location.href = 'index.html'
-    }, 6000);
-
+function focusOff() {
+    
 }
+
+// function backToHomepage() {
+//     setTimeout(function () {
+//          window.location.href = 'index.html'
+//         // console.log("boo")
+//     }, 6000);
+// }
 
 

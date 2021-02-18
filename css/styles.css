@@ -19,7 +19,10 @@ font-family:'Rubik',Arial, Helvetica, sans-serif;
     justify-content: center;
     align-items: center;
     height: 300px;
-    margin-top: 30px;
+    margin-top: 0px; 
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 
@@ -27,7 +30,7 @@ font-family:'Rubik',Arial, Helvetica, sans-serif;
     font-size: 30px;
     background-color:#fcd2fb;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 #winning {
@@ -49,7 +52,7 @@ font-family:'Rubik',Arial, Helvetica, sans-serif;
     position: absolute; 
     width: 500px; 
     height: 380px; 
-    z-index:9999"
+    z-index:9999;
   }
 
   #container {
@@ -65,7 +68,7 @@ font-family:'Rubik',Arial, Helvetica, sans-serif;
 
 iframe {
     border: 2px #fac3d7 solid;
-    border-radius:5px;
+    border-radius:15px;
     }
 
 #losing {
@@ -78,29 +81,35 @@ iframe {
 
 .btn {
   border-radius: 15px;
-  background-color: #f2edf1;
+  /* background-color: #f2edf1; */
+  /* background-color: #55adb5; */
+  background-color: #78bec4;
   text-transform: uppercase;
-  font-weight:bold ;
-  font-size: larger;
+  font-weight:bold;
+  font-size: 1.8em;
+  text-align: center;
+  color:#e36bd9;
+  box-shadow: 5px;
 }
-/*#card1, #card2 a:focus
-{
- background-color:yellow;
-}*/
+
+
 .btn:focus {
   outline: none;
-}
-.btn:focus-visible {
   outline: 10px solid blanchedalmond; 
   background-color:yellow;
 }
+
+/* .btn:focus-visible {
+  outline: 10px solid blanchedalmond; 
+  background-color:yellow;
+} */
 
 #page2 {
   background-color: #fae8f6;
 }
 
 div.ball img {
-  margin-top: 300px;
+  margin-top: 100px;
   border-radius: 10%;
   width: 300px;
   height: 300px;
@@ -127,7 +136,7 @@ div.ball img {
 }
 
  div.fixe img {
-  margin-top: 200px;
+  margin-top: 100px;
   border-radius: 10%;
   width: 200px;
   height: 200px;
@@ -144,29 +153,29 @@ div.ball img {
   position: relative;
   
 }
-.start {
-  width: 400px;
-  height: 150px;
-  border:black 1px solid;
-  border-radius: 5px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-}
+
 
 .start-text {
   text-decoration: none;
   font-size: larger;
   color: black;
+  border:#fae8f6 1px solid;
+  width: 400px;
+  height: 150px;
+  border:#fae8f6 1px solid;
+  background-image: url("/images/cocktails.jpeg");
+  border-radius: 15px;
+  animation: bounce 0.5s 2s infinite alternate;
+  -webkit-animation: bounce 0.5s infinite alternate;
+  line-height: 150px;
 }
 
 .titre {
-margin:80px 50px 50px 50px;
+margin:60px 50px 50px 50px;
 }
 
 .paragraph {
-margin:50px;
+margin:10px 10px 100px 10px;
 }
 
 #container-losing {
