@@ -140,7 +140,11 @@ iframe {
 
 #page2 {
   /* background-color: #fae8f6; */
-  background-image: url("./images/BrokenHearts.jpg");
+  /* background-image: url("./images/BrokenHearts.jpg"); */
+  background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 div.ball img {
@@ -198,7 +202,7 @@ div.ball img {
   width: 400px;
   height: 150px;
   border:#fae8f6 1px solid;
-  background-image: url("./images/cocktails.jpg");
+  background-image: url("../images/cocktails.jpg");
   border-radius: 15px;
   animation: bounce 0.5s 2s infinite alternate;
   -webkit-animation: bounce 0.5s infinite alternate;
